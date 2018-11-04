@@ -24,3 +24,15 @@ Pam module to log authentication attempts, including recording of attempted user
     # grep user=steve /var/log/messages
     Nov  4 22:10:42 localhost sshd[3777]: foo user=steve pass=topsecret host=localhost
     #
+
+## Platforms
+
+Very basic/rudimentary testing done on CentOS 7.5.
+
+## Bugs
+
+Plenty.
+
+## Limitations
+
+Since nonexistent users fail at the preauth stage, authentication attempts against nonexistent users will not be captured / recorded by this module.
